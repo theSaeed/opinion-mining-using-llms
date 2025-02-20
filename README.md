@@ -8,19 +8,23 @@ This is the official repository of the paper:
 ## Dataset
 
 ### Dependencies
-* Python 3.6 or higher
+* Python 3.7 or higher
 * NLTK 3.8
 
 Please install all dependencies using the following command in your terminal:
 
 ```
-pip install -r requirements.txt
+pip install -r dataset/requirements.txt
 ```
 
 ### Cleaner Script
 
 1. Please download the original MPQA dataset from [http://mpqa.cs.pitt.edu/corpora/mpqa_corpus/mpqa_corpus_2_0/](http://mpqa.cs.pitt.edu/corpora/mpqa_corpus/mpqa_corpus_2_0/).
 2. Unzip it and move `database.mpqa.2.0/` to the `dataset/` directory.
+```
+tar -xzf mpqa_2_0_database.tar.gz -C dataset/
+rm mpqa_2_0_database.tar.gz 
+```
 3. Run the following commands:
 ```
 cd dataset
