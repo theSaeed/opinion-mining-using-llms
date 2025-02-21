@@ -9,7 +9,7 @@ This is the official repository of the paper:
 
 ### Dependencies
 * Python 3.7 or higher
-* NLTK 3.8
+* NLTK 3.8.1
 
 Please install all dependencies using the following command in your terminal:
 
@@ -31,6 +31,13 @@ cd dataset
 sh clean.sh
 ```
 4. The cleaned version of the dataset will be available at `dataset/MPQA2.0_cleaned.json`. You can also find each fold's training-validation-test split of each task in [dataset/folds/](dataset/folds/).
+
+#### Active Few-shot Learning Subset
+
+After generating the clean dataset using the previous steps, you can run the following command to generate the MPQA subset (including <b>t</b>ype, <b>p</b>olarity, and <b>i</b>ntensity) of the datasets used in the [Active Few-Shot Learning for Text Classification](https://github.com/theSaeed/active-fewshot-learning) experiments:
+```
+sh extract-tpi.sh
+```
 
 ## Cite Us
 

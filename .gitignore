@@ -48,3 +48,4 @@ Thumbs.db
 database.mpqa.2.0/
 database.mpqa.2.0.cleaned/
 MPQA2.0_cleaned.json
+afl-subset/
